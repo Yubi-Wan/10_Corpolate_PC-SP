@@ -1,0 +1,611 @@
+/* ================================================
+リセットcss：HTML5 Doctor CSS Reset 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+================================================ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+/* ================================================
+ここからPCのCSS
+================================================ */
+
+@media only screen and (min-device-width: 481px) {
+
+/* ================================================
+PC：header
+================================================ */
+
+header{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header_sp{
+  display: none;
+}
+
+/* ================================================
+PC：header：左側
+================================================ */
+
+.header h1 a{
+  font-size: 28px;
+  color: #029ae2;
+  margin: 0 0 0 34px;
+  text-decoration: none;
+}
+
+.header h1 span{
+  font-size: 28px;
+  color: #30d0ed;
+}
+
+/* ================================================
+PC：header：右側
+================================================ */
+
+.header_right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul{
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header li a{
+  text-decoration: none;
+  color: #333333;
+}
+
+.header p a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 70px;
+  width: 200px;
+  height: 80px;
+  background-color: #30d0ed;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ================================================
+PC：main：メインイメージ
+================================================ */
+.main_image{
+  background-image: url(images/main_img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 0px;
+  padding-top: 41.9%;
+  margin: 63px 0 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main_image_txt {
+  position: absolute;
+  top: 31%;
+}
+
+.main_image_txt h2{
+  font-size: 70px;
+  color: #ffffff;
+}
+
+.main_image_txt p{
+  font-size: 20px;
+  color: #ffffff;
+  margin: 40px 0 0 0;
+}
+
+.main_image_sp{
+  display: none;
+}
+
+/* ================================================
+PC：main：ニュース
+================================================ */
+.news{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 60px 0 ;
+  width: 100%;
+  height: auto;
+  background-color: #edfcff;
+}
+
+.news_sp{
+  display: none;
+}
+
+/* ================================================
+PC：main：ニュース：左側
+================================================ */
+.news_tittle{
+  margin: 0 40px 0 0;
+}
+
+.news_tittle h3{
+  font-size: 28px;
+  color: #029ae2;
+  padding: 10px 0 0 0;
+}
+
+.news_tittle p a{
+  font-size: 12px;
+  color: #333333;
+  margin: 10px 0 0 0;
+  text-decoration: none;
+}
+
+.news_tittle p::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  margin: 0 0 0 10px;
+  content: "\f105";
+  font-size: 12px;
+  color: #333333;
+}
+
+/* ================================================
+PC：main：ニュース：右側
+================================================ */
+.news_details dl{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #333333;
+  font-size: 13px;
+  border-bottom: solid 1px #30d0ed;
+}
+
+.news_details dl a{
+  text-decoration: none;
+  color: #333333;
+}
+
+.news_details dt{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 110px;
+  height: 40px;
+}
+
+.news_details span{
+  display: flex;
+  justify-content: center;
+}
+
+.news_details dd{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 800px;
+}
+
+/* ================================================
+PC：main：サービス：タイトル
+================================================ */
+.service_up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0 20px 0;
+}
+
+.service_tittle h3{
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  color: #029ae2;
+}
+
+.service_tittle p{
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: #029ae2;
+  margin: 10px 0 0 0;
+}
+
+/* ================================================
+PC：main：サービス：コンテンツ
+================================================ */
+.service_details a{
+  display: block;
+  background-color: #bddbe2;
+  width: 300px;
+  height: 150px;
+  margin: 0 10px;
+}
+
+.service_details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 60px 0;
+}
+
+
+/* ================================================
+PC：fooder 
+================================================ */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #90d5e2;
+  width: 100%;
+  height: 60px;
+}
+
+footer p{
+  color: #ffffff;
+  font-size: 13px;
+}
+
+}
+
+/* ================================================
+ここからスマホののCSS
+================================================ */
+
+@media only screen and (max-device-width: 480px) {
+
+/* ================================================
+SP：header 
+================================================ */
+header{
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.header_sp{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+}
+
+.header_sp h1 a{
+  font-size: 24px;
+  color: #029ae2;
+  margin: 0 0 0 0px;
+  text-decoration: none;
+}
+
+.header_sp h1 span{
+  font-size: 24px;
+  color: #30d0ed;
+}
+
+.header_sp_right a{
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+}
+
+.header{
+  display: none;
+}
+
+/* ================================================
+SP：main：メインイメージ
+================================================ */
+.main_image_sp{
+  background-image: url(images/main_img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 0px;
+  padding-top: 41.9%;
+  margin: 24px 0 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main_image_txt_sp {
+  position: absolute;
+  top: 36%;
+}
+
+.main_image_txt_sp h2{
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.main_image_txt_sp p{
+  font-size: 13px;
+  color: #ffffff;
+  margin: 10px 0 0 0;
+}
+
+.main_image{
+  display: none;
+}
+
+/* ================================================
+SP：main：ニュース
+================================================ */
+.news_sp{
+  padding: 0px 0 0px 0 ;
+  width: 100%;
+  height: auto;
+  background-color: #edfcff;
+}
+
+.news{
+  display: none;
+}
+
+/* ================================================
+SP：main：ニュース：タイトル
+================================================ */
+.news_tittle_sp{
+  padding: 20px 0px 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news_tittle_sp h3{
+  font-size: 25px;
+  color: #029ae2;
+}
+
+.news_tittle_sp p{
+  padding: 0 0 0 10px;
+}
+
+.news_tittle_sp p a{
+  font-size: 12px;
+  color: #333333;
+  margin: 10px 0 0 0;
+  text-decoration: none;
+}
+
+.news_tittle_sp p::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  margin: 0 0 0 10px;
+  content: "\f105";
+  font-size: 12px;
+  color: #333333;
+}
+
+/* ================================================
+SP：main：ニュース：右側
+================================================ */
+.news_contents_sp{
+  margin: 20px 0 0 0;
+  box-sizing: border-box;
+  padding: 0px 15px 20px 15px;
+}
+
+.news_label_sp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: #333333;
+  margin: 10px 0 0 0;
+}
+
+.news_label_sp a{
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 10px 0 0;
+}
+
+.news_details_sp{
+  border-bottom: solid 1px #30d0ed;
+  padding: 3px 0px;
+}
+
+.news_details_sp a{
+  text-decoration: none;
+  color: #333333;
+  font-size: 13px;
+}
+
+/* ================================================
+SP：main：サービス：タイトル
+================================================ */
+.service_up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 10px 0;
+}
+
+.service_tittle h3{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: #029ae2;
+}
+
+.service_tittle p{
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: #029ae2;
+  margin: 10px 0 0 0;
+}
+
+/* ================================================
+SP：main：サービス：コンテンツ
+================================================ */
+.service_details a{
+  display: block;
+  background-color: #bddbe2;
+  width: 350px;
+  height: 130px;
+  margin: 15px 10px;
+  box-sizing: border-box;
+}
+
+.service_details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 30px 0;
+}
+
+
+/* ================================================
+SP：fooder 
+================================================ */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #90d5e2;
+  width: 100%;
+  height: 60px;
+}
+
+footer p{
+  color: #ffffff;
+  font-size: 13px;
+}
+
+
+}
